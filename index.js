@@ -39,7 +39,7 @@ const init = () => {
 
     if (task == "View all employees") {
       db.promise()
-        .query("SELECT * FROM employees")
+        .query("SELECT * FROM employee")
         .then((data) => {
           console.table(data[0]);
           init();
@@ -57,7 +57,53 @@ const init = () => {
         db.promise().query("INSERT INTO department SET ?", newDept).then(init)
       );
     }
+
+    if (task == "Add a role") {
+      prompt([
+        {
+          type: "input",
+          name: "title",
+          message: "What is the name of the role?",
+        },
+        {
+          type: "input",
+          name: "salary",
+          message: "What is the salary of this role?"
+        },
+        {
+          type: "input",
+          name: "department_id",
+          message: "To which department does this role belong?",
+        },
+      ]).then((newDept) =>
+        db.promise().query("INSERT INTO department SET ?", newDept).then(init)
+      );
+    }
+
+    if (task == "Add an employee") {
+      prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "What is the name of the department you would like to add?",
+        },
+      ]).then((newDept) =>
+        db.promise().query("INSERT INTO department SET ?", newDept).then(init)
+      );
+    }
+
+    if (task == "Update an employee role") {
+      prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "What is the name of the department you would like to add?",
+        },
+      ]).then((newDept) => db.promise().query("INSERT INTO department SET ?", newDept).then(init)
+      );
+    }
   });
 };
 //go to db first, require db
 init();
+

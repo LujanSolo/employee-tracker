@@ -71,12 +71,19 @@ const init = () => {
           message: "What is the salary of this role?"
         },
         {
-          type: "input",
+          type: "list",
           name: "department_id",
           message: "To which department does this role belong?",
+          choices: [
+            "Engineering",
+            "Finance",
+            "Legal",
+            "Sales"
+          ],
         },
-      ]).then((newDept) =>
-        db.promise().query("INSERT INTO department SET ?", newDept).then(init)
+
+      ]).then((newRole) =>
+        db.promise().query("INSERT INTO department SET ?", newRole).then(init)
       );
     }
 

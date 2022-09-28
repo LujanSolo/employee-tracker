@@ -66,7 +66,7 @@ const init = () => {
           message: "What is the name of the role?",
         },
         {
-          type: "input",
+          type: "number",
           name: "salary",
           message: "What is the salary of this role?"
         },
@@ -75,15 +75,14 @@ const init = () => {
           name: "department_id",
           message: "To which department does this role belong?",
           choices: [
-            "Engineering",
-            "Finance",
-            "Legal",
-            "Sales"
+            "1",
+            "2",
+            "3",
+            "4"
           ],
         },
-
       ]).then((newRole) =>
-        db.promise().query("INSERT INTO department SET ?", newRole).then(init)
+        db.promise().query("INSERT INTO role SET ?", newRole).then(init)
       );
     }
 
@@ -111,6 +110,6 @@ const init = () => {
     }
   });
 };
-//go to db first, require db
+
 init();
 

@@ -17,8 +17,8 @@ The Employee Tracker is a content management system (CMS) that allows the user t
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contribute](#contribute)
-- [Tests](#tests)
+- [Screenshots](#screenshots)
+- [GIF](#gif)
 - [License](#license)
 - [Questions](#questions)
 
@@ -28,13 +28,13 @@ Download the zip folder or clone the repository for the application, which can b
 
 ## Usage
 
-In your CLI (command line interface, e.g. Terminal on a Mac, gitBash on Windows), open the directory where you installed the repository's files. Be sure to have Node installed by typing 'npm i' in your CLI. Run the application by typing 'node server' in your CLI. Use your arrow keys to cycle through the options that are presented on the screen; hitting ENTER on any option will present a new list of prompts for you to follow and answer.
+In your CLI (command line interface, e.g. Terminal on a Mac, gitBash on Windows), open the directory where you installed the repository's files. Be sure to have Node installed by typing 'npm i' in your CLI. Run the application by typing 'npm start' in your CLI. Use your arrow keys to cycle through the options that are presented on the screen; hitting ENTER on any option will present a new list of prompts for you to follow and answer.
 
-## Contribution
+## Screenshots
 
 NA
 
-## Tests
+## GIF
 
 NA
 

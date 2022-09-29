@@ -15,8 +15,7 @@ const init = () => {
         "Add A Department",
         "Add A Role",
         "Add An Employee",
-        "Update An Employee Role",
-        "Delete A Department"
+        "Update An Employee Role"
       ],
     },
   ]).then(({ task }) => {

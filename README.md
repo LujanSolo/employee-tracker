@@ -6,7 +6,7 @@
 
 [LujanSolo's Github Repo for EmpTracker](https://github.com/LujanSolo/employee-tracker)
 
-[VIDEO LINK walk-thru of Application]()
+[VIDEO LINK walk-thru of Application](https://drive.google.com/file/d/1bQKBUkhNyI-GKHSJGebdCy2vGvmMTPTj/view)
 
 ## Description
 

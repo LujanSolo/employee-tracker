@@ -16,7 +16,6 @@ The Employee Tracker is a content management system (CMS) that allows the user t
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [GIF](#gif)
 - [License](#license)
 - [Questions](#questions)
 
@@ -40,9 +39,6 @@ Run the application by typing `npm start` in your CLI. Use your arrow keys to cy
 
 ![Look of application with update user details showing](./assets/images/emp-tracker2.png)
 
-## GIF
-
-NA
 
 ## License
 
